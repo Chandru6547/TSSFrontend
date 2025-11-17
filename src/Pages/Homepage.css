@@ -1,0 +1,202 @@
+/* ===================== GLOBAL ====================== */
+.homepage {
+  background-color: #000;
+  color: white;
+  padding-top: 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fade-in scroll effect */
+.fade-section {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================== HERO ====================== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #000 30%, #0a0a0a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 800;
+  text-shadow: 0px 0px 6px rgba(0, 255, 255, 0.4);
+}
+
+.hero-subtitle {
+  max-width: 800px;
+  font-size: 20px;
+  margin-top: 20px;
+  opacity: 0.85;
+}
+
+.hero-btn {
+  margin-top: 35px;
+  background: cyan;
+  color: black;
+  padding: 12px 32px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+.hero-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.5);
+}
+
+/* ===================== HIGHLIGHTS ====================== */
+.highlights {
+  background: #0a0a0a;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.highlight-title {
+  font-size: 32px;
+  color: cyan;
+  text-shadow: 0 0 5px rgba(0,255,255,0.4);
+  margin-bottom: 40px;
+}
+
+.highlight-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.highlight-card {
+  background: #111;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid cyan;
+  box-shadow: 0px 0px 10px rgba(0,255,255,0.15);
+  transition: 0.3s;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 16px rgba(0,255,255,0.2);
+}
+
+/* ===================== COURSES ====================== */
+.courses {
+  padding: 80px 20px;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  color: cyan;
+  margin-bottom: 40px;
+  text-shadow: 0 0 5px rgba(0,255,255,0.4);
+}
+
+.courses-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.course-box {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid cyan;
+  box-shadow: 0 0 10px rgba(0,255,255,0.15);
+  transition: 0.3s;
+}
+
+.course-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(0,255,255,0.25);
+}
+
+/* ===================== ABOUT ====================== */
+.about {
+  padding: 90px 20px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  color: cyan;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ===================== TESTIMONIALS ====================== */
+.testimonials {
+  padding: 90px 20px;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.testimonials-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.testimonial-box {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid cyan;
+  box-shadow: 0 0 10px rgba(0,255,255,0.15);
+}
+
+.testimonial-box p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.testimonial-box h4 {
+  color: cyan;
+  font-size: 18px;
+}
+
+/* ===================== FOOTER ====================== */
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 18px 0;
+  border-top: 1px solid rgba(0,255,255,0.4);
+}
