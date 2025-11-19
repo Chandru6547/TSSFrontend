@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from '../logo.png';
+import logo from '../image.png';
 
-export default function Navbar() {
+export default function Navbar() {  
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
 
-        {/* LOGO */}
         <div className="navbar-brand">
           <img
             src={logo}
