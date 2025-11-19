@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+import logo from '../logo.png';
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
 
-        {/* LOGO + NAME */}
+        {/* LOGO */}
         <div className="navbar-brand">
           <img
-            src="https://lh3.googleusercontent.com/p/AF1QipPw0Zao_KYuaMipacLhym_O6Q-3APadfs67fvdf=s1360-w1360-h1020-rw"
+            src={logo}
             alt="TechSign Logo"
             className="navbar-logo-img"
           />
@@ -19,7 +22,7 @@ export default function Navbar() {
         </div>
 
         {/* MENU */}
-        <ul className="navbar-menu">
+        <ul className={`navbar-menu ${open ? "active" : ""}`}>
           <li>Home</li>
           <li>Courses</li>
           <li>About</li>
@@ -27,7 +30,9 @@ export default function Navbar() {
         </ul>
 
         {/* MOBILE MENU BUTTON */}
-        <button className="navbar-btn">☰</button>
+        <button className="navbar-btn" onClick={() => setOpen(!open)}>
+          ☰
+        </button>
 
       </div>
     </nav>
