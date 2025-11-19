@@ -39,7 +39,7 @@ export default function HomePage() {
         </h1>
 
         <p className="hero-subtitle fade-section">
-          A Leading IT Training Institute offering Real-Time Training, 
+          A Leading IT Training Organization offering Real-Time Training, 
           Live Projects & Placement Support for Students and Professionals.
         </p>
 
