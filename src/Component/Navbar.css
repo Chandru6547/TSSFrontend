@@ -143,3 +143,16 @@
   }
 }
 
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar-menu li.active-link a {
+  color: #ffae00;
+  font-weight: bold;
+}
+
+

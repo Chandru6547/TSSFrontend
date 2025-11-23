@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../Component/Navbar";
 import "./Homepage.css";
-import ParticlesBackground from "./ParticlesBackground";
 
 export default function HomePage() {
 
@@ -29,10 +28,8 @@ export default function HomePage() {
 
   return (
     <div className="homepage">
-      <ParticlesBackground />
       <Navbar />
 
-      {/* HERO SECTION */}
       <section className="hero">
         <h1 className="hero-title fade-section">
           Welcome to TechSign Solutions
@@ -76,7 +73,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ================= OUR COURSES ================= */}
       <section className="courses">
         <h2 className="section-title fade-section">Our Popular Courses</h2>
 
@@ -105,7 +101,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ================= ABOUT SECTION ================= */}
       <section className="about">
         <div className="about-content fade-section">
           <h2>About TechSign Solutions</h2>

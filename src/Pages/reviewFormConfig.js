@@ -1,0 +1,49 @@
+export const reviewFormConfig = [
+  {
+    name: "studentName",
+    label: "Student Name",
+    type: "text",
+    placeholder: "Enter your name",
+    defaultValue: "Chandruvasan S",
+    disabled: true,
+  },
+  {
+    name: "batch",
+    label: "Batch",
+    type: "select",
+    options: ["Python FullStack", "MERN Stack", "Java FullStack", "AWS + DevOps"],
+  },
+  {
+    name: "topic",
+    label: "Today's Topic",
+    type: "text",
+    placeholder: "Eg: React useState, OOPS, SQL Joins",
+  },
+  {
+    name: "understanding",
+    label: "How well did you understand the topic?",
+    type: "select",
+    options: ["Excellent", "Good", "Average", "Poor"],
+  },
+  {
+    name: "reason",
+    label: "Reason for Poor understanding",
+    type: "textarea",
+    placeholder: "Explain your difficulty...",
+    dependsOn: "understanding",
+    showIf: "Poor",
+  },
+  {
+    name: "rating",
+    label: "Rating (1 to 5)",
+    type: "number",
+    min: 1,
+    max: 5,
+  },
+  {
+    name: "suggestion",
+    label: "Any Suggestions?",
+    type: "textarea",
+    placeholder: "Write your improvement suggestions",
+  },
+];

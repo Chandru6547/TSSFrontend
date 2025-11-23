@@ -1,0 +1,157 @@
+.about-page {
+  background: #000;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TITLE */
+.about-heading {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 45px;
+  color: cyan;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(0,255,255,0.5);
+}
+
+/* SECTION BOXES */
+.about-section {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid cyan;
+  box-shadow: 0 0 18px rgba(0,255,255,0.25);
+}
+
+.about-section h2 {
+  font-size: 30px;
+  color: cyan;
+  margin-bottom: 14px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0,255,255,0.5);
+}
+
+.about-section p,
+.about-section li {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.about-section ul,
+.about-section ol {
+  padding-left: 20px;
+}
+
+.placement-stats {
+  position: relative;  /* Needed to control pseudo element */
+  z-index: 1;          /* Bring actual content above */
+  text-align: center;
+  margin: 80px auto;
+  padding: 40px 20px;
+  max-width: 1100px;
+}
+
+
+.stats-heading {
+  font-size: 36px;
+  font-weight: 800;
+  color: cyan;
+  margin-bottom: 15px;
+  text-shadow: 0 0 12px rgba(0,255,255,0.5);
+}
+
+.stats-desc {
+  font-size: 20px;
+  color: #bbb;
+  max-width: 800px;
+  margin: 0 auto 45px;
+  line-height: 1.7;
+}
+
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 35px;
+  margin-top: 15px;
+}
+
+.counter-box {
+  background: #111;
+  border: 1px solid cyan;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,255,255,0.35);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s;
+}
+
+.counter-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0,255,255,0.9);
+}
+
+.counter-box h3 {
+  font-size: 46px;
+  color: cyan;
+  font-weight: 800;
+  text-shadow: 0 0 18px rgba(0,255,255,0.6);
+}
+
+.counter-box p {
+  font-size: 19px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* EXTRA SECTION */
+.about-extra {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 35px;
+  background: #111;
+  border: 1px solid cyan;
+  border-radius: 14px;
+  box-shadow: 0 0 22px rgba(0,255,255,0.3);
+}
+
+.about-extra h2 {
+  color: cyan;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(0,255,255,0.6);
+}
+
+.about-extra li {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+/* CONTACT BOX */
+.about-contact {
+  text-align: center;
+  padding: 40px;
+  background: #111;
+  border-radius: 12px;
+  border: 1px solid cyan;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+/* SCROLL ANIMATION */
+.fade-section {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
