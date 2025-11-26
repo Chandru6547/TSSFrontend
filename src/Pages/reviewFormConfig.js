@@ -40,6 +40,12 @@ export const reviewFormConfig = [
     min: 1,
     max: 5,
   },
+   {
+    name: "suggestion",
+    label: "How was the content delivered ?",
+    type: "textarea",
+    placeholder: "How was the content delivered ?",
+  },
   {
     name: "suggestion",
     label: "Any Suggestions?",

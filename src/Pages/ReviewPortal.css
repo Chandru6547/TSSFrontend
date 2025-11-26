@@ -6,6 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* ================= TITLE ================= */
 .review-title {
   text-align: center;
   font-size: 38px;
@@ -15,9 +16,49 @@
   text-shadow: 0 0 12px rgba(0,255,255,.6);
 }
 
-.review-form {
-  max-width: 800px;
+/* ================= TWO COLUMN LAYOUT ================= */
+.review-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+/* ================= LEFT CONTENT BOX ================= */
+.review-info {
+  width: 45%;
+  background: #0e0e0e;
+  /* border: 1px solid cyan; */
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,255,255,.25);
+}
+
+.review-info h2 {
+  font-size: 30px;
+  color: cyan;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.review-info p,
+.review-info li {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.review-info ul {
+  list-style: disc;
+  padding-left: 25px;
+}
+
+/* ================= RIGHT SIDE FORM ================= */
+.review-form {
+  width: 45%;
   background: #111;
   padding: 30px 30px 35px;
   border-radius: 14px;
@@ -27,6 +68,9 @@
 
 .form-group {
   margin-bottom: 22px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   text-align: left;
 }
 
@@ -37,24 +81,30 @@
   display: block;
 }
 
-input, textarea, select {
+/* INPUT FIELDS */
+input,
+textarea,
+select {
   width: 100%;
+  max-width: 100%;
   padding: 13px;
   font-size: 16px;
   border-radius: 10px;
   border: 1px solid cyan;
   background: #000;
   color: white;
+  box-sizing: border-box;
 }
 
-input:disabled, textarea:disabled, select:disabled {
+input:disabled,
+textarea:disabled,
+select:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
 .submit-btn {
   width: 100%;
-  margin-top: 10px;
   padding: 15px;
   background: cyan;
   color: black;
@@ -62,36 +112,23 @@ input:disabled, textarea:disabled, select:disabled {
   font-weight: 800;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.review-list {
-  max-width: 950px;
-  margin: 50px auto;
+.submit-btn:hover {
+  background: white;
+  color: black;
 }
 
-.review-list h2 {
-  text-align: center;
-  font-size: 32px;
-  color: cyan;
-  margin-bottom: 25px;
-}
+/* ================= RESPONSIVE ================= */
+@media (max-width: 950px) {
+  .review-layout {
+    flex-direction: column;
+    gap: 25px;
+  }
 
-.review-card {
-  background: #0b0b0b;
-  border: 1px solid cyan;
-  padding: 25px;
-  border-radius: 14px;
-  margin-bottom: 15px;
-  box-shadow: 0 0 18px rgba(0,255,255,.25);
-}
-
-.review-card h3 {
-  color: cyan;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.rev-text {
-  margin: 10px 0;
-  color: #ccc;
+  .review-info,
+  .review-form {
+    width: 100%;
+  }
 }

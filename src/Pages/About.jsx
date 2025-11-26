@@ -107,7 +107,7 @@ export default function About() {
 
         <div className="counter-grid">
           <Counter end={1200} label="Students Trained" />
-          <Counter end={850} label="Placement Offers" />
+          <Counter end={1450} label="Placement Offers" />
           <Counter end={18} label="Highest Package (LPA)" />
           <Counter end={5} label="Average Package (LPA)" />
           <Counter end={140} label="Recruitment Partners" />

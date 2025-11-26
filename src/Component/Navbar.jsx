@@ -37,6 +37,9 @@ export default function Navbar() {
           <li className={location.pathname === "/review" ? "active-link" : ""}>
             <Link to="/review-portal" onClick={() => setOpen(false)}>Review Portal</Link>
           </li>
+          <li className={location.pathname === "/testimonial" ? "active-link" : ""}>
+            <Link to="/testimonial" onClick={() => setOpen(false)}>Testimonials</Link>
+          </li>
         </ul>
 
         {/* MOBILE MENU BUTTON */}

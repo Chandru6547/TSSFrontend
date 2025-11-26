@@ -128,21 +128,26 @@
 }
 
 .placement-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
+  gap: 35px;
+  width: 100%;
   padding: 10px;
 }
 
 .placement-grid img {
-  width: 140px;
-  height: 65px;
-  object-fit: contain;
-  filter: brightness(0.9);
+  width: 160px;     /* same width */
+  height: 80px;     /* same height */
+  object-fit: contain; 
+  background: #111; /* optional clean bg behind transparent logos */
+  padding: 10px;    /* adds inner spacing */
+  border-radius: 8px;
+  filter: brightness(0.95);
   transition: all 0.3s ease-in-out;
 }
+
 
 .placement-grid img:hover {
   transform: scale(1.12);
