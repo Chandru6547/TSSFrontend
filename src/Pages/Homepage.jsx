@@ -121,24 +121,21 @@ export default function HomePage() {
 
           <div className="testimonial-box fade-section">
             <p>
-              “I got placed as a React Developer after completing the MERN course! 
-              The live projects and mock interviews helped me a lot.”
+              "Had a great learning experience and understanding on complex topics with the stories that'll connect with real world examples. Shravan sir explained everything with back stories and his way of doubt clearing helped a lot with complex topics."
             </p>
-            <h4>— Rahul, Frontend Developer</h4>
+            <h4>— Harine, Frontend Developer</h4>
           </div>
 
           <div className="testimonial-box fade-section">
             <p>
-              “Best place to learn AWS DevOps. Trainers teach with real-time 
-              scenarios. The labs were amazing!”
+              "Exceptional training institute with well-structured courses and highly knowledgeable instructors. Shravan sir’s dedication and the hands-on learning approach truly enhance skills in a supportive environment. Highly recommended—five stars!"
             </p>
             <h4>— Sneha, DevOps Engineer</h4>
           </div>
 
           <div className="testimonial-box fade-section">
             <p>
-              “The Python + ML course helped me get my first job in Data Science. 
-              Loved the practical approach!”
+              “I am always greatful to have u as mentor .You are my inspiration and role model . Thank you for explaining us in understandable way ..”
             </p>
             <h4>— Arvind, Data Analyst</h4>
           </div>
